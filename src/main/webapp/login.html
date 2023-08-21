@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOGIN PAGE</title>
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	/* background-image: linear-gradient(red,green,blue,purple,orange ); */
+	/* background-image: url("https://th.bing.com/th/id/R.bcaab8396d3c39a4ad6ce9e466eafbc9?rik=AivamTsYXYquaw&riu=http%3a%2f%2fwonderfulengineering.com%2fwp-content%2fuploads%2f2016%2f01%2fblack-wallpaper-5.jpg&ehk=k7b43dTNfpAHO8zGh%2bjoBREKoBs5syeX7fcnqJtV1tw%3d&risl=&pid=ImgRaw&r=0"); */
+	/* background-repeat: no-repeat; */
+	/* background-attachment: fixed; */
+	/* background-size: cover; */
+	/* background: linear-gradient(45deg,rgba(0, 15, 0, 0.358),#151725,rgb(107, 102, 102),rgb(0, 255, 255)); */
+	/* animation: gradient 15s ease-in-out infinite; */
+	/* background-size: 400% 400%; */
+	/* height: 400px; */
+	/* width: 500px; */
+	/* border-radius: 10px; */
+	/* background-image:url("https://media.giphy.com/media/jb0SQ1vs7qi1q/giphy.gif"); */
+	background-image: url("https://wallpaperaccess.com/full/51379.jpg");
+	backdrop-filter: blur(1px);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+div {
+	height: 400px;
+	width: 500px;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.33);
+	align-items: center;
+	position: relative;
+	left: 5vw;
+	top: 10vw;
+	transition: all 0.1s;
+	box-shadow: 10px 10px 10px rgb(17, 17, 17);
+}
+
+input {
+	height: 50px;
+	width: 300px;
+	border: none;
+	border-radius: 10px;
+	background-color: rgba(51, 51, 51, 0.479);
+	outline: none;
+	color: orange;
+	position: relative;
+	left: 30px;
+	top: 80px;
+	/* align-items: center; */
+	text-indent: 10px;
+}
+
+h2 {
+	position: relative;
+	left: 60px;
+	top: 70px;
+	color: black;
+}
+
+h1 {
+	position: relative;
+	left: 110px;
+	top: 130px;
+	color: black;
+}
+
+button {
+	position: relative;
+	top: 80px;
+	background-color: transparent;
+	outline: none;
+	color: black;
+	font-size: 20px;
+}
+
+button:hover {
+	text-shadow: 5px 2px 5px gold;
+	transition: all 0.2s;
+	/* filter: brightness(1000); */
+	color: white;
+	transition-duration: 1s;
+	font-size: 30px;
+}
+
+input {
+	color: white;
+	font-size: 20px;
+}
+
+#loc{
+color: white;
+top : 120px;
+right: 330px;
+position : relative;
+}
+
+
+</style>
+</head>
+<body>
+
+	<h1>WELCOME TO MY RESTAURANT</h1>
+	<div>
+		<h2>Login here :</h2>
+		<form action="login" method="post">
+
+			<!-- <label for="name">UserName</label> -->
+			<!-- <br> -->
+			<table cellspacing="20">
+				<tr id="name">
+					<td><input type="text" placeholder="Email or mobile number"
+						id="name" name="email"> <span class="input_icon-wrapper"> <i
+							class="input_icon ri-eye-off-line"></i>
+					</span></td>
+
+				</tr>
+
+
+
+				<tr id="pass">
+					<td><input type="password" placeholder="password" id="pass" name="password">
+
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<button>login</button>
+					</td>
+					
+					<td>
+						<button>cancel</button>
+					</td>
+					
+					 <td>
+					 <a href="./fg.html" id="loc">Forgot password?</a>
+					 </td>
+					 
+					 <td>
+					 <a href="_target" id="loc">New? click here to create new account</a>
+					 </td>
+				</tr>
+				
+			</table>
+		</form>
+	</div>
+</body>
+</html>

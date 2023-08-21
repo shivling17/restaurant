@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign up form</title>
+	<link rel="stylesheet" href="./signup.css">
+	<style>
+		label {
+			color: orange;
+			font-family: cursive;
+		}
+
+		input {
+			border: 1px solid white;
+			outline: none;
+			height: 25px;
+		}
+
+
+
+		* {
+			color: orange;
+		}
+
+		body {
+			background-image: url("https://th.bing.com/th/id/R.c7516fdd29e9cbc8afb7d75ef272641c?rik=njALEjKXuqjuFA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fhuDiDyr.jpg&ehk=uV%2bpyS8Y3U4FhCtbSeuqh0mnh54JoRmuCV997XanRcE%3d&risl=&pid=ImgRaw&r=0");
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		td>input {
+			background-color: rgba(128, 128, 128, 0.363);
+			border: none;
+			border-radius: 8px;
+			/* outline: none; */
+			/* border: none; */
+		}
+
+		.main {
+			width: 50%;
+			background-color: transparent;
+			position: relative;
+			left: 35%;
+			border-radius: 50px;
+			/* box-shadow: 10px 10px 10px rgb(0, 255, 213); */
+			height: 500px;
+			width: 500px;
+			margin-top: 150px;
+			box-shadow: 2px 2px 100px rgb(0, 0, 0);
+        }
+
+		textarea {
+			background-color: transparent;
+			outline: none;
+		}
+
+		.main:hover {
+			box-shadow: 2px 2px 50px rgb(255, 255, 255);
+
+
+		}
+
+		button {
+			background-color: orange;
+			color: white;
+			font-weight: bolder;
+		}
+
+		select>option {
+			background-color: none;
+		}
+
+		button {
+			border: none;
+			height: 25px;
+           /* border: 2px solid red; */
+           position: relative;
+           bottom: 40px;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+        option
+        {
+            border: none;
+            background-color: none;
+        }
+        table
+        {
+            /* border: 2px solid red; */
+            position: relative;
+            bottom: 60px;
+            right: 20px;
+        }
+        button:hover
+        {
+            color: aqua;
+            box-shadow: 2px 2px 10px aqua;
+            background-color: aqua;
+        }
+       
+
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<center>
+			<legend>
+				<h1>signup</h1>
+			</legend>
+		</center>
+		<center>
+			<form action="signup"  method="post" enctype="multipart/form-data" style="display: 50%; width: 50%;">
+				<table>
+					<tr>
+						<td>
+							<label for="33">FullName:</label>
+						</td>
+						<td>
+							<input type="text" id="33" name="fullname">
+							<br />
+							<br />
+
+						</td>
+						<br />
+						<br />
+
+					</tr>
+
+
+					<tr>
+						<td>
+							<label for="00"><i>Password:</i></label>
+						</td>
+						<td>
+							<input type="password" id="00" name="password" >
+							<br />
+							<br />
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<label for="66">MOBILENO:</label>
+
+						</td>
+						<td> 
+							<input type="tel" id="66" name="mobile"  ">
+						
+							<br />
+							<br />
+						</td>
+					</tr>
+
+
+					<tr>
+						<td>
+							<label for="00"><i>EMAIL ID:</i></label>
+						</td>
+						<td>
+							<input type="email" id="00" name="email">
+							<br />
+							<br />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="00"><i>DOB:</i></label>
+						</td>
+						<td>
+							<input type="date" id="00" name="dob">
+							<br />
+							<br />
+						</td>
+					</tr>
+
+
+                    <tr>
+                           <td>
+                                <label for="">
+                                    gender
+                                </label>
+                            </td>
+                        <td>
+                           Male <input type="radio" name="Male" value="male" name="gender">
+                           Female <input type="radio" name="Female" value="female" name="gender">
+                           Other <input type="radio" name="Other" value="gender" name="gender">
+                        </td>
+                    </tr>
+                    <br>
+                    <br>
+					
+					<tr>
+						<td>
+							<label for="00"><i>picture:</i></label>
+						</td>
+						<td>
+							<input type="file" id="00" name="picture">
+							<br />
+							<br />
+						</td>
+					</tr>
+
+                    <tr>
+                        <td>
+                            <label for="country">country</label>
+                        </td>
+                        <td>
+                            <select name="" id="country" name="country">
+                               <option value="">Gulbarga</option>
+                               <option value="">Bidar</option>
+                               <option value="">Yadgir</option>
+                               <option value="">Hasan</option>
+                               <option value="">Uganda</option>
+
+                               <br>
+                               <br>
+                            </select>
+                        </td>
+                    </tr>
+                    
+
+				</table>
+				<button>
+					submit
+				</button>
+				<button>
+					reset
+				</button>
+
+			</form>
+		</center>
+
+
+	</div>
+
+</body>
+
+</html>
